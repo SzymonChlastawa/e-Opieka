@@ -1,0 +1,24 @@
+/* kolory dla wszystkich przeglądarek */
+
+
+input::-webkit-input-placeholder {
+  color: #3B82F6 !important;
+  opacity: 0.8 !important;
+}
+
+
+input::-moz-placeholder {
+  color: #3B82F6 !important;
+  opacity: 0.8 !important;
+}
+
+
+input:-ms-input-placeholder {
+  color: #3B82F6 !important;
+}
+
+
+input::placeholder {
+  color: #3B82F6 !important;
+  opacity: 0.8 !important;
+}

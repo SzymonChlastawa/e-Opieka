@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Opieka</title>
+
+    <link rel="icon" type="image/png" href="/logo_eOpieka.png" />
+    <link rel="apple-touch-icon" href="/logo_eOpieka.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+      /* Podstawowy reset i ustawienia ekranu */
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; /* Zmieniono z hidden na overflow-x, aby umożliwić przewijanie w pionie jeśli trzeba */
+        background-color: #F1F5F9; /* Zmieniono z czarnego na kolor tła Twojej aplikacji */
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      /* Stylizacja placeholderów w polach tekstowych */
+      input::-webkit-input-placeholder { color: #3B82F6 !important; opacity: 0.8 !important; }
+      input::placeholder { color: #3B82F6 !important; opacity: 0.8 !important; }
+
+      /* Animacja pojawiania się elementów (używana w trybie 60+) */
+      @keyframes popIn {
+        0% { opacity: 0; transform: scale(0.4); }
+        70% { transform: scale(1.1); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
